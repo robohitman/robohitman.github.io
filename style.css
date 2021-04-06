@@ -1,0 +1,274 @@
+html 
+{
+	scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+}
+
+body
+{
+    background-color: #08141E;
+    height: 100%;
+    max-width: 1920px;
+    margin: auto;
+}
+
+h1
+{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/*Navigation system*/
+
+#nav
+{
+    margin-top: 8%;
+    margin-bottom: 0;
+    margin-left: 25%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    position: sticky;
+    z-index: 2;  
+}
+
+.btn 
+{
+    border: none;
+    background-color: inherit;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    padding: 0.5em;
+    cursor: pointer;
+    color: #51D600;
+    display: inline-block; 
+}
+
+
+.btn:hover 
+{
+    text-decoration: underline;
+}
+
+.active
+{
+    background-color: #51D600;
+    color: #08141E;
+}
+
+
+
+/*Background part, with computer layout*/
+  
+#part
+{
+    background-image: url("./img/Console2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    box-sizing: border-box;
+    background-color: #08141E;
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 1%;
+    padding: 1%;
+    font-family: 'Cutive Mono', monospace;;
+    font-size: 1em;
+    position: sticky;
+    z-index: 2;
+}
+
+/*Site container, sets flex-box*/
+
+#container
+{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    width: 70%;
+    max-height: 400px;
+    overflow: auto;
+}
+
+/*Information text/any text container*/
+
+#text
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0;
+    padding: 0.5%;
+    color: #51D600;
+    font-family: 'Cutive Mono', monospace;;
+    font-size: 1em;
+    align-self: center;
+    order: 1;  
+}
+
+/*Profile cards*/
+
+#profile
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0;
+    padding: 0.5%;
+    color: #51D600;
+    font-family: 'Cutive Mono', monospace;;
+    font-size: 1em;
+    align-self: center;
+    order: 2;
+    display: none;
+}
+
+.wrapper
+{
+    display: grid;
+    margin-top: 2%;
+    margin-right: 0;
+    grid-template-columns: 10em 40em;
+    max-width: 70%;    
+}
+
+.prof
+{
+    max-width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+.kim_p 
+{
+    grid-column: 1;
+    grid-row: 1;
+    
+}
+
+.kim_t
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+.siiri_p 
+{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.siiri_t
+{
+    grid-column: 2;
+    grid-row: 2;
+}
+.niko_p 
+{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.niko_t 
+{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.atte_p 
+{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.atte_t 
+{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.miska_p 
+{
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.miska_t 
+{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.milla_p 
+{
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.milla_t 
+{
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.andreas_p 
+{
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.andreas_t 
+{
+    grid-column: 2;
+    grid-row: 7;
+}
+
+/*Social media part*/
+
+#some
+{
+    margin-left: 5%;
+    margin-right: 15%;
+    margin-top: 0;
+    padding: 0.5%;
+    color: #51D600;
+    font-family: 'Cutive Mono', monospace;;
+    font-size: 1em;
+    align-self: center;
+    order: 3;
+    display: none;
+}
+
+iframe
+{
+    border: none;
+    overflow: visible;
+    max-width: 100%;
+}
+.som
+{
+    display: grid;
+    margin-top: 2%;
+    margin-right: 0;
+    grid-template-columns: 22em 20em;
+    grid-column-gap: 4em;
+    max-width: 70%;
+    
+}
+
+.fb
+{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.itch
+{
+    grid-column: 2;
+    grid-row: 1;
+}
