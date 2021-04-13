@@ -347,3 +347,37 @@ iframe
         width: 206px;
     }
 }
+
+@media screen and (max-width: 400px)
+{
+    .btn
+    {
+        font-size: 1rem;
+    }
+
+    #part
+    {
+        width: 100%;
+    }
+
+    #some
+    {
+        width: 99%;
+    }
+
+    .som
+    {
+        display: block;
+        width: 99%;
+    }    
+
+    .fb
+    {
+        width: 400px;
+    }
+
+    .itch
+    {
+        width: 206px;
+    }
+}
