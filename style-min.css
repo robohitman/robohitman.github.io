@@ -244,38 +244,33 @@ h1
     display: none;
 }
 
-iframe
-{
-    border: none;
-    overflow: visible;
-    width: 100%;
-}
-.som
+.row 
 {
     display: grid;
-    margin-top: 2%;
-    margin-right: 0;
-    grid-template-columns: 12rem 25rem;
-    grid-template-rows: 10rem;
-    max-width: 70%;
-    
+    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin: 5px;
 }
-
-.fb
+    
+.column 
 {
-    grid-column: 2;
-    grid-row: 2;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}
+    
+.row:after 
+{
+    visibility: hidden;
+    content: " ";
+    clear: both;
 }
 
 .itch
 {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.fb-mob
-{
-    display: none;
+    width: 50%;
 }
 
 @media screen and (max-width: 869px) and (min-width: 725px)
@@ -336,21 +331,6 @@ iframe
         width: 95%;
     }
 
-    .som
-    {
-        display: block;
-        width: 95%;
-    }    
-
-    .fb
-    {
-        width: 400px;
-    }
-
-    .itch
-    {
-        width: 206px;
-    }
 }
 
 @media screen and (max-width: 489px) and (min-width: 449px)
@@ -380,21 +360,6 @@ iframe
         width: 95%;
     }
 
-    .som
-    {
-        display: block;
-        width: 95%;
-    }    
-
-    .fb
-    {
-        width: 400px;
-    }
-
-    .itch
-    {
-        width: 206px;
-    }
 }
 
 @media screen and (max-width: 448px) and (min-width: 400px)
@@ -424,21 +389,6 @@ iframe
         width: 95%;
     }
 
-    .som
-    {
-        display: block;
-        width: 95%;
-    }    
-
-    .fb
-    {
-        width: 400px;
-    }
-
-    .itch
-    {
-        width: 206px;
-    }
 }
 
 @media screen and (max-width: 400px)
@@ -468,26 +418,4 @@ iframe
         width: 99%;
     }
 
-    .som
-    {
-        display: block;
-        width: 99%;
-    }    
-
-    .fb-comp
-    {
-        display: none;
-    }
-
-
-    .fb-mob
-    {
-        display: block;
-        width: 350px;
-    }
-
-    .itch
-    {
-        width: 206px;
-    }
 }

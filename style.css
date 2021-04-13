@@ -254,33 +254,33 @@ h1
     display: none;
 }
 
-iframe
-{
-    border: none;
-    overflow: visible;
-    max-width: 100%;
-}
-.som
+.row 
 {
     display: grid;
-    margin-top: 2%;
-    margin-right: 0;
-    grid-template-columns: 25em 20em;
-    grid-column-gap: 4em;
-    max-width: 70%;
-    
+    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin: 5px;
 }
-
-.fb
+    
+.column 
 {
-    grid-column: 1;
-    grid-row: 1;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}
+    
+.row:after 
+{
+    visibility: hidden;
+    content: " ";
+    clear: both;
 }
 
 .itch
 {
-    grid-column: 2;
-    grid-row: 1;
+    width: 50%;
 }
 
 @media screen and (max-width: 1699px)
@@ -330,11 +330,6 @@ iframe
         margin-right: 15%;  
     }
     
-    .som
-    {
-        grid-template-columns: 25em 15em;
-        grid-column-gap: 1em;
-    }
 }
 
 @media screen and (max-width: 1400px)
@@ -379,19 +374,9 @@ iframe
         margin-right: 15%;  
     }
     
-    .som
-    {
-        grid-template-columns: 25em 15em;
-        grid-column-gap: 1em;
-    }
 }
 
 .mobile
-{
-    display: none;
-}
-
-.fb-mob
 {
     display: none;
 }
