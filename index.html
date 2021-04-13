@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="keywords" content="2D game, pixel art game, robot game, dystopic, platformer, singleplayer, RoboHitman">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" content="height=device-height, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+        <link rel="stylesheet" media="screen and (min-width: 1250px)" href="./style.css">
+        <link rel="stylesheet" media="screen and (max-width: 1249px)" href="./style-min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+        <title>RoboHitman - The Game</title>
         
     </head>
 <body>
 
 <div id="part">
     <div id="nav">
+        <img src="./img/Logo.png" class="logo" alt="RoboHitman">
         <button class="btn active" id="game" onclick="handleClick(0)">The Game</button>
         <button class="btn" id="team" onclick="handleClick(1)">Team</button>
         <button class="btn" id="sos" onclick="handleClick(2)">Social medias</button>
@@ -35,13 +39,15 @@
         </p>     
         <p>
             RoboHitman is a game development project what is part of Ticorporate VIII in Jyväskylä University of Applied sciences.
+            <br><br>
+            <a href="https://www.ticorporate.fi/"><img src="./img/TicorporateLogo.png" class="tico" alt="Ticorporate VIII"></a>
         </p>
         </div>
         <div id="profile">
             <h1>Team</h1>
             <div class="wrapper">
                 <div class="kim_p">
-                    <img src="./img/People/Kim.jpg" class="prof">    
+                    <img src="./img/People/Kim.jpg" class="prof" alt="">    
                 </div>
                 <div class="kim_t">
                     <p>
@@ -52,7 +58,7 @@
                     </p>
                 </div>
                 <div class="siiri_p">
-                    <img src="./img/People/Siiri.png" class="prof">
+                    <img src="./img/People/Siiri.png" class="prof" alt="">
                 </div>
                 <div class="siiri_t">
                     <p>
@@ -60,7 +66,7 @@
                     </p>    
                 </div>
                 <div class="niko_p">
-                    <img src="./img/People/Niko.png" class="prof">
+                    <img src="./img/People/Niko.png" class="prof" alt="">
                 </div>
                 <div class="niko_t">
                     <p>
@@ -69,7 +75,7 @@
                     </p>
                 </div>
                 <div class="atte_p">
-                    <img src="./img/People/Atte.png" class="prof">
+                    <img src="./img/People/Atte.png" class="prof" alt="">
                 </div>
                 <div class="atte_t">
                     <p>
@@ -78,7 +84,7 @@
                     </p>
                 </div>
                 <div class="miska_p">
-                    <img src="./img/People/pilalla.png" class="prof">
+                    <img src="./img/People/pilalla.png" class="prof" alt="">
                 </div>
                 <div class="miska_t">
                     <p>
@@ -88,7 +94,7 @@
                     </p>
                 </div>
                 <div class="milla_p">
-                    <img src="./img/People/MillaKuva.png" class="prof">
+                    <img src="./img/People/MillaKuva.png" class="prof" alt="">
                 </div>
                 <div class="milla_t">
                     <p>
@@ -97,7 +103,7 @@
                     </p>
                 </div>
                 <div class="andreas_p">
-                    <img src="./img/People/Andreas.png" class="prof">
+                    <img src="./img/People/Andreas.png" class="prof" alt="">
                 </div>
                 <div class="andreas_t">
                     <p>
@@ -112,15 +118,15 @@
             <h1>Social medias</h1>
             <div class="som">
                 <div class="fb">
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRoboHitman%2F&tabs=timeline&width=350&height=437&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="437" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowfullscreen="false" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">></iframe>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRoboHitman%2F&tabs=timeline&width=400&height=437&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="437" style="border:none; overflow:hidden;" scrolling="yes" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
                 <div class="itch">
-                    <iframe frameborder="0" src="https://itch.io/embed/951660?border_width=0&amp;bg_color=08141E&amp;fg_color=000000&amp;link_color=c3a38a&amp;border_color=08141E" width="206" height="165"><a href="https://tarinataikomo.itch.io/robohitman">RoboHitman by Tarinataikomo</a></iframe> 
+                    <iframe frameborder="0" src="https://itch.io/embed/951660?linkback=true&amp;border_width=0&amp;bg_color=08141E&amp;fg_color=000000&amp;link_color=c3a38a&amp;border_color=08141E" width="206" height="165"><a href="https://tarinataikomo.itch.io/robohitman">RoboHitman by Tarinataikomo</a></iframe> 
                 </div>
             </div>    
         </div>
     </div>        
 </div>
+<script src="./script.js"></script>
 </body>
-<script type="text/javascript" src="./script.js"></script>
 </html>

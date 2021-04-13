@@ -1,40 +1,38 @@
 html 
 {
 	scroll-behavior: smooth;
-    height: 100%;
     width: 100%;
+    font-size: 100%;
 }
 
 body
 {
-    background-color: #08141E;
-    height: 100%;
-    max-width: 1920px;
+    background-color: #4e495f;
     margin: auto;
 }
 
 h1
 {
     font-family: 'Press Start 2P', cursive;
-    font-size: 1.5em;
+    font-size: 1.2rem;
     margin: 0;
 }
 
 /*Logo*/
 .logo
 {
-    display: none;
+    margin-top: 2%;
+    width: 15%;
 }
 
 /*Navigation system*/
 
 #nav
 {
-    margin-top: 8%;
     margin-bottom: 0;
-    margin-left: 25%;
+    margin-right: 0;
+    width: 90%;
     font-family: 'Press Start 2P', cursive;
-    font-size: 1em;
     position: sticky;
     z-index: 2;  
 }
@@ -44,7 +42,7 @@ h1
     border: none;
     background-color: inherit;
     font-family: 'Press Start 2P', cursive;
-    font-size: 1.5em;
+    font-size: 1.2rem;
     padding: 0.5em;
     cursor: pointer;
     color: #51D600;
@@ -69,21 +67,17 @@ h1
   
 #part
 {
-    background-image: url("./img/Console2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center top;
     box-sizing: border-box;
     background-color: #08141E;
-    width: 70%;
-    height: 100%;
+    width: 90%;
+    min-height: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 1%;
     padding: 1%;
     font-family: 'Cutive Mono', monospace;;
-    font-size: 1em;
+    font-size: 1rem;
     position: sticky;
     z-index: 2;
 }
@@ -97,8 +91,6 @@ h1
     margin: auto;
     margin-top: 5%;
     flex-wrap: wrap;
-    width: 70%;
-    max-height: 400px;
     overflow: auto;
 }
 
@@ -106,13 +98,14 @@ h1
 
 #text
 {
+    height: 100%;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 0;
     padding: 0.5%;
     color: #51D600;
     font-family: 'Cutive Mono', monospace;;
-    font-size: 1em;
+    font-size: 1rem;
     align-self: center;
     order: 1;  
 }
@@ -126,13 +119,12 @@ h1
 
 #profile
 {
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 90%;
     margin-top: 0;
     padding: 0.5%;
     color: #51D600;
     font-family: 'Cutive Mono', monospace;;
-    font-size: 1em;
+    font-size: 1rem;
     align-self: center;
     order: 2;
     display: none;
@@ -143,8 +135,7 @@ h1
     display: grid;
     margin-top: 2%;
     margin-right: 0;
-    grid-template-columns: 10em 40em;
-    max-width: 70%;    
+    grid-template-columns: 8rem auto; 
 }
 
 .prof
@@ -242,13 +233,12 @@ h1
 
 #some
 {
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 90%;
     margin-top: 0;
     padding: 0.5%;
     color: #51D600;
     font-family: 'Cutive Mono', monospace;;
-    font-size: 1em;
+    font-size: 1rem;
     align-self: center;
     order: 3;
     display: none;
@@ -258,130 +248,50 @@ iframe
 {
     border: none;
     overflow: visible;
-    max-width: 100%;
+    width: 100%;
 }
 .som
 {
     display: grid;
     margin-top: 2%;
     margin-right: 0;
-    grid-template-columns: 25em 20em;
-    grid-column-gap: 4em;
+    grid-template-columns: 12rem 25rem;
+    grid-template-rows: 10rem;
     max-width: 70%;
     
 }
 
 .fb
 {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 2;
+    grid-row: 2;
 }
 
 .itch
 {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
 }
 
-@media screen and (max-width: 1699px)
+@media screen and (max-width: 869px)
 {
-    body 
-    {
-        max-width: 1699px;
-    }
-
-    h1
-    {
-        font-size: 1.1vw;
-    }
-
-    p
-    {
-        font-size: 1vw;
-    }
-
-
     .btn
     {
-        font-size: 1.1vw;
+        font-size: 1.1rem;
     }
 
-    #container
+    h1 
     {
-        margin-left: 10%;
-        overflow-x: hidden;
-    }
-    .wrapper
-    {
-       max-width: 60%;
-       grid-template-columns: 10rem 30rem; 
-       width: 60%; 
-       margin: 0;
-    }
-    
-    #profile
-    {
-        margin-left: 15%;
+        font-size: 1.1rem ;
     }
 
-    #some
+    #nav
     {
-        margin-left: 20%;
-        margin-right: 15%;  
-    }
-    
-    .som
-    {
-        grid-template-columns: 25em 15em;
-        grid-column-gap: 1em;
-    }
-}
-
-@media screen and (max-width: 1400px)
-{
-    #container
-    {
-        max-height: 350px;
-        
+        width: 95%;
     }
 
-}
-
-@media screen and (max-width: 1380px)
-{
-    #container
+    #part
     {
-        margin-right: 5%;
-        width: 80%;
-    }
-
-    #text
-    {
-        margin-left: 10%;
-    }
-
-    .wrapper
-    {
-        width: 65%;
-        max-width: 68%;
-        grid-template-columns: 7rem 30rem;
-    }
-
-    #profile
-    {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    #some
-    {
-        margin-left: 25%;
-        margin-right: 15%;  
-    }
-    
-    .som
-    {
-        grid-template-columns: 25em 15em;
-        grid-column-gap: 1em;
+        width: 95%;
     }
 }
