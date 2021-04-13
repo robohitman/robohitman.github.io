@@ -385,3 +385,8 @@ iframe
         grid-column-gap: 1em;
     }
 }
+
+.mobile
+{
+    display: none;
+}
