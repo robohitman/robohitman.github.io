@@ -18,6 +18,29 @@ h1
     margin: 0;
 }
 
+/*Scrollbar*/
+::-webkit-scrollbar 
+{
+    width: 4px;
+    
+}
+  
+::-webkit-scrollbar-track 
+{
+    background: transparent;
+}
+   
+::-webkit-scrollbar-thumb 
+{
+    background: #0f2a3f;
+    max-height: 20px;
+}
+  
+::-webkit-scrollbar-thumb:hover 
+{
+    background: #51D600;
+}
+
 /*Logo*/
 .logo
 {
