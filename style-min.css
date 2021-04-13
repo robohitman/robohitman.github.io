@@ -273,6 +273,11 @@ iframe
     grid-row: 1;
 }
 
+.fb-mob
+{
+    display: none;
+}
+
 @media screen and (max-width: 869px) and (min-width: 725px)
 {
     .btn
@@ -304,7 +309,7 @@ iframe
     }    
 }
 
-@media screen and (max-width: 594px)
+@media screen and (max-width: 594px) and (min-width: 490px)
 {
     .mobile
     {
@@ -318,7 +323,95 @@ iframe
 
     .btn
     {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+
+    #part
+    {
+        width: 100%;
+    }
+
+    #some
+    {
+        width: 95%;
+    }
+
+    .som
+    {
+        display: block;
+        width: 95%;
+    }    
+
+    .fb
+    {
+        width: 400px;
+    }
+
+    .itch
+    {
+        width: 206px;
+    }
+}
+
+@media screen and (max-width: 489px) and (min-width: 449px)
+{
+    .mobile
+    {
+        display: block;
+    }
+
+    #nav
+    {
+        width: 100%;
+    }
+
+    .btn
+    {
+        font-size: 0.9rem;
+    }
+
+    #part
+    {
+        width: 100%;
+    }
+
+    #some
+    {
+        width: 95%;
+    }
+
+    .som
+    {
+        display: block;
+        width: 95%;
+    }    
+
+    .fb
+    {
+        width: 400px;
+    }
+
+    .itch
+    {
+        width: 206px;
+    }
+}
+
+@media screen and (max-width: 448px) and (min-width: 400px)
+{
+    .mobile
+    {
+        display: block;
+    }
+
+    #nav
+    {
+        width: 100%;
+    }
+
+    .btn
+    {
+        font-size: 0.8rem;
     }
 
     #part
@@ -350,6 +443,16 @@ iframe
 
 @media screen and (max-width: 400px)
 {
+    .mobile
+    {
+        display: block;
+    }
+
+    #nav
+    {
+        width: 100%;
+    }
+
     .btn
     {
         font-size: 0.7rem;
@@ -371,9 +474,16 @@ iframe
         width: 99%;
     }    
 
-    .fb
+    .fb-comp
     {
-        width: 400px;
+        display: none;
+    }
+
+
+    .fb-mob
+    {
+        display: block;
+        width: 350px;
     }
 
     .itch
